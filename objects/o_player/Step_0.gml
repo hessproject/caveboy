@@ -10,7 +10,6 @@ up_release = keyboard_check_released(vk_up);
 
 #region State Machine
 switch(state){
-	
 #region Move State
 	case player.moving:
 	
@@ -94,7 +93,6 @@ switch(state){
 	break;
 	
 #endregion
-
 #region Ledge Grab State
 	case player.ledge_grab:
 	if(down) {
@@ -106,7 +104,6 @@ switch(state){
 	}
 	break;
 #endregion
-
 #region Door State 
 	case player.door:
 		sprite_index = s_player_exit;
@@ -119,14 +116,47 @@ switch(state){
 	
 	break;
 #endregion
-	
 #region Hurt State
 	case player.hurt:
+	
+	sprite_index = s_player_hurt;
+	
+	//Change direction after hurt
+	if(xspeed != 0) {
+		image_xscale = sign(xspeed);
+	}
+	
+	if (!place_meeting(x, y + 1, o_solid)){
+		yspeed += gravity_acceleration;
+	} else {
+		yspeed = 0;
+		apply_friction(acceleration);
+	}
+	direction_move_bounce(o_solid);
+	
+	//Change back to the other states
+	if (xspeed == 0 and yspeed == 0){
+		//Check health
+		if(o_player_stats.hp <= 0){
+			state = player.death;
+		} else {
+			image_blend = c_white;
+			state = player.moving;
+		}
+	}
+	
 	break; 
 #endregion
-	
 #region Death State
 	case player.death: 
+	
+		with(o_player_stats){
+			hp = max_hp;
+			sapphires = 0;
+		}
+		
+		room_restart();
+	
 	break;
 #endregion
 
