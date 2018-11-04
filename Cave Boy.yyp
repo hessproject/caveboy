@@ -383,11 +383,27 @@
             }
         },
         {
+            "Key": "ad3c5d0c-74a6-401a-a864-4a3110d9b24b",
+            "Value": {
+                "id": "40f25329-17f0-4f40-9de2-9605c7a36d90",
+                "resourcePath": "objects\\o_sapphire\\o_sapphire.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "adeeae4a-6d66-494b-8e8a-4bdd3a920dc9",
             "Value": {
                 "id": "6190675f-dec3-4c2a-a628-56193b632970",
                 "resourcePath": "views\\adeeae4a-6d66-494b-8e8a-4bdd3a920dc9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b74fc4ad-1472-495f-affd-e34eda3e9422",
+            "Value": {
+                "id": "fd9d16e2-4706-45e5-8509-35295301c22f",
+                "resourcePath": "sprites\\s_sapphire\\s_sapphire.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
