@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "2e713440-12fa-46fd-9696-9cc1cdf4f18b",
+            "Value": {
+                "id": "a950a489-4388-49a3-9a2c-602dcdc451bd",
+                "resourcePath": "rooms\\r_two\\r_two.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "2f586218-6294-4371-8e04-02d632b76c54",
             "Value": {
                 "id": "6cb417fe-d5b1-45bf-b9fa-79d968c4d1ff",
@@ -292,14 +300,6 @@
                 "id": "73e0c626-9922-40e3-8246-40972e96e055",
                 "resourcePath": "sprites\\s_bat_fly\\s_bat_fly.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "785de4a2-daf6-47ec-93c7-084c579d2f7d",
-            "Value": {
-                "id": "1c434434-1857-416a-ad39-d5b135fcec98",
-                "resourcePath": "rooms\\r_two\\r_two.yy",
-                "resourceType": "GMRoom"
             }
         },
         {

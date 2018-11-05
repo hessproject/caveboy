@@ -111,9 +111,9 @@ switch(state){
 		if(image_alpha > 0){
 			image_alpha -= .075;
 		} else {
+			state = player.moving;
 			room_goto_next();
 		}
-	
 	break;
 #endregion
 #region Hurt State
